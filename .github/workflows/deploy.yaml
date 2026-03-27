@@ -17,9 +17,9 @@ jobs:
         uses : appleboy/ssh-action@v1.0.3
         with : 
           host : ${{secrets.SSH_HOST}}
-          username : root
+          username : ubuntu
           key : ${{secrets.SSH_KEY}}
           script: |
             cd /home/ubuntu/data/nodejs-deploy-github-actions
             git pull
-            docker compose up -d --build\
+            sudo docker compose up -d --build
