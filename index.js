@@ -8,5 +8,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Server is running on ${PORT} with git actions yayay`)
+    console.log(`Server is running on ${PORT} with git actions, this should work now`)
 } )
